@@ -19,6 +19,7 @@ body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
   padding-right: 2.44444444em; /* 44 / 18 = 2.44444444 */
   padding-left: 2.44444444em; /* 44 / 18 = 2.44444444 */
+  background-color: #36EDC1;
 }
 
 h1,
