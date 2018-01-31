@@ -13,12 +13,33 @@
     <main id="content">
       <section id="about">
         <p>
-        Need new addition to your collection? There are many unique types of styles that
-        would fit your inrest.  If you'd like to know more about the lastest sneaker
-        releases and their release dates please fill out the following form.
+        Need new addition to your collection? There are many unique types of styles of sneakers
+        that we offer that would fit your inrest. If you'd like to know more about the lastest sneaker
+        releases and their release dates please fill out the following form to sign up for our weekly newsletter.
         </p>
       </section>
       <section id="signup">
+        <form action="#null" method="get" id="sign-form">
+          <ol>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input placeholder="you@example.com" type="email" id="email" name="email" />
+            </li>
+            <li>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" />
+            </li>
+            <li>
+              <label for="birthday">Birthday</label>
+              <input type="date" id="birthday" name="birthday" />
+            </li>
+          </ol>
+          <input type="submit" value="submit" />
+        </form>
       </section>
     </main>
     <footer id="footer">
