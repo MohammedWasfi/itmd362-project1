@@ -71,3 +71,8 @@ footer {
 #sign-form {
   width: 50%;
 }
+
+#submit:hover {
+  color: blue;
+  cursor: pointer;
+}
