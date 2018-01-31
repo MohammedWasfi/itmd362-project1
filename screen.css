@@ -53,3 +53,21 @@ footer {
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
 
 }
+
+#email,
+#phone,
+#birthday,
+#name,
+#brand {
+  position: relative;
+  width: 100%;
+}
+
+#submit {
+  position: relative;
+  width: 50%;
+}
+
+#sign-form {
+  width: 50%;
+}
