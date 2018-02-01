@@ -76,3 +76,9 @@ footer {
   color: blue;
   cursor: pointer;
 }
+
+#submission {
+    padding-top: 3.667em; /* 66 / 18 = 3.667... */
+    padding-bottom: 3.667em; /* 66 / 18 = 3.667... */
+
+}
