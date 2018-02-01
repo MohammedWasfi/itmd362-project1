@@ -13,6 +13,6 @@ $('#sign-form').on('submit',
     }
     else {
       console.log('Valid email');
-      $('body').append('<h1 id="submission"> Thank you ' + name + '!  your sign up has been completed.</h1>');
+      $('body').replacewith('<h1 id="submission"> Thank you ' + name + '!  your sign up has been completed.</h1>');
     }
   });
