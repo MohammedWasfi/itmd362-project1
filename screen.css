@@ -316,18 +316,20 @@ input[type="submit"] {
 
 @media screen and (min-width: 860px) {
 
-  .cssgrid #content {
+  #content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 25px;
   }
 
-  .cssgrid #about {
+  #about {
     grid-column: 1;
+    padding-top: 2.444em;
   }
 
-  .cssgrid #signup {
+  #signup {
     grid-column: 2/4;
+    padding-top: 2.444em;
   }
 
 }
