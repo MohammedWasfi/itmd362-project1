@@ -279,7 +279,6 @@ input[type="submit"] {
 }
 
 #inputs li {
-  /* border: 1px solid #444; */
   background: #3F3F3F;
 }
 
@@ -299,6 +298,13 @@ input[type="submit"] {
 }
 
 @media screen and (min-width: 640px) {
+
+  padding-right: 6.56%; /* 42 / 640 = 6.56% */
+  padding-left: 6.56%; /* 42 / 640 = 6.56% */
+
+}
+
+@media screen and (min-width: 860px) {
 
   .cssgrid #content {
     display: grid;
