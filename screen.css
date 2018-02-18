@@ -217,7 +217,74 @@ li {
 footer {
   padding-top: 0.611em; /* 11 / 18 = 0.6111111 */
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
+  clear: both;
 
+}
+
+label,
+input {
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+label {
+  height: 1.222em; /* 22 / 18 = 1.222em */
+}
+
+input {
+  box-sizing: border-box;
+  border: 0;
+  line-height: 1;
+  padding: 0.722em 0; /* 13 / 18 = 0.722 */
+  height: 2.444em; /* 44 / 18 = 2.444 */
+  background: inherit;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background: #CCC;
+  padding: 0.611em; /* 11 / 18 = 0.6111; (22 - 13) = 9 / 18 = 0.5 */
+  border-radius: 0.2em;
+  float: right;
+}
+
+#inputs li {
+  padding: 0.611em; /* 11 / 18 = 0.6111; (22 - 13) = 9 / 18 = 0.5 */
+  margin-bottom: 0.611em; /* 11 / 18 = 0.6111 */
+  border-radius: 0.2em;
+}
+
+#inputs .submit {
+  padding-right: 0;
+  background: inherit;
+}
+
+label {
+  color: #DDD;
+}
+
+input {
+  color: #37CED0;
+}
+
+input::placeholder {
+  color: #37CED0;
+  opacity: 0.7;
+}
+
+input[type="submit"] {
+  background: #4CA8A9;
+  color: #FFFFFF;
+}
+
+#inputs li {
+  /* border: 1px solid #444; */
+  background: #3F3F3F;
+}
+
+#inputs .submit {
+  border: 0;
 }
 
 #submit:hover {
