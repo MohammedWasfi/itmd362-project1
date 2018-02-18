@@ -199,8 +199,12 @@ h1 {
   line-height: 1.032em; /* 44 / 42.635 = 1.032 */
   padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
   text-align: center;
-  font-family: Georgia;
+  font-family: 'Viga', sans-serif;
 
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
 ol {
@@ -293,14 +297,20 @@ input[type="submit"] {
 
 
 @media screen and (min-width: 375px) {
+
+  body {
   padding-right: 11.2%; /* 42 / 375 = 11.2% */
   padding-left: 11.2%; /* 42 / 375 = 11.2% */
+
+  }
 }
 
 @media screen and (min-width: 640px) {
 
-  padding-right: 6.56%; /* 42 / 640 = 6.56% */
-  padding-left: 6.56%; /* 42 / 640 = 6.56% */
+  body {
+    padding-right: 6.56%; /* 42 / 640 = 6.56% */
+    padding-left: 6.56%; /* 42 / 640 = 6.56% */
+  }
 
 }
 
