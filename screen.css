@@ -39,7 +39,7 @@ h1 {
 
 ol {
   padding-bottom: 0.611em; /* 11 / 18 = 0.6111111 */
-  list-style-type: disc;
+  list-style-type: none;
 
 }
 
@@ -81,4 +81,9 @@ footer {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
   padding-bottom: 3.667em; /* 66 / 18 = 3.667... */
 
+}
+
+@media screen and (min-width: 375px) {
+  padding-right: 11.2%; /* 42 / 375 = 11.2% */
+  padding-left: 11.2%; /* 42 / 375 = 11.2% */
 }
