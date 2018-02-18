@@ -87,3 +87,21 @@ footer {
   padding-right: 11.2%; /* 42 / 375 = 11.2% */
   padding-left: 11.2%; /* 42 / 375 = 11.2% */
 }
+
+@media screen and (min-width: 640px) {
+
+  .cssgrid #content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 25px;
+  }
+
+  .cssgrid #about {
+    grid-column: 1;
+  }
+
+  .cssgrid #signup {
+    grid-column: 2/4;
+  }
+
+}
