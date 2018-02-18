@@ -1,18 +1,28 @@
-$('html').removeClass('no-js').addClass('js');
-$('#sign-form').on('submit',
-  function(e) {
-    var email = $('#email').val();
-    var valid = /.+@.+\..+/g;
-    var validemail = valid.test(email);
+$.noConflict();
+jQuery(function($) {
+  $('html').removeClass('nojs');
+  $('html').addClass('hasjs');
+
+  $('#sign-form').on("submit", function(e) {
     var name = $('#name').val();
+    var email = {
+      val: $('#email').val(),
+      pattern: /^[^\s@]+@[^\s@]+$/
+    };
     e.preventDefault();
-    if(!validemail){
-      console.log('Invalid email');
-      alert("The email you entered was invalid");
-      return false;
-    }
-    else {
-      console.log('Valid email');
-      $('body').replaceWith('<h1 id="submission"> Thank you ' + name + '!  your sign up has been completed.</h1>');
+   if (email.val === '') {
+     console.log('email is empty');
+     $('#invalid').remove();
+     $('#emailadd').append('<li id="invalid">Please enter an email</li>');
+   }
+   else if (!(email.pattern).test(email.val)) {
+     console.log('invalid email');
+     $('#invalid').remove();
+     $('#emailadd').append('<li id="invalid">Please enter a valid email</li>');
+   }
+   else {
+      $(this).remove();
+      $('#signup').append('<h1 id="submitted"> Thank you ' + name + '!  your sign up has been completed.</h1>');
     }
   });
+});
