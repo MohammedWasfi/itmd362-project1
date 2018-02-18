@@ -295,6 +295,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+#invalid {
+  color: red;
+}
+
 #submitted {
   color: red;
 
