@@ -207,8 +207,8 @@ h1 {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 ol {
@@ -318,8 +318,8 @@ input[type="submit"] {
 @media screen and (min-width: 375px) {
 
   body {
-  padding-right: 11.2%; /* 42 / 375 = 11.2% */
-  padding-left: 11.2%; /* 42 / 375 = 11.2% */
+    padding-right: 11.2%; /* 42 / 375 = 11.2% */
+    padding-left: 11.2%; /* 42 / 375 = 11.2% */
 
   }
 }
