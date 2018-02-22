@@ -3,6 +3,10 @@ jQuery(function($) {
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
 
+  $('#inputs li').on('click', function() {
+  $(this).find('input').focus();
+});
+
   $('#sign-form').on("submit", function(e) {
     var name = $('#name').val();
     var email = {
